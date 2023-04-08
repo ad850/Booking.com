@@ -6,20 +6,17 @@
   font-size: 18px;
   font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica,
     Arial, sans-serif;
-    position: relative;
+  position: relative;
 }
-
 .headerContainer {
   width: 100%;
   margin: 20px 0px 100px 158px;
 }
-
 .headerList {
   display: flex;
   align-items: center;
   gap: 39px;
 }
-
 .btn1 {
   cursor: pointer;
 }
@@ -44,65 +41,61 @@
   color: gray;
   width: 100%;
   max-width: 1024px;
-
 }
-
-.headerIcon{
-color: lightgray;
-padding-right: 10px;
-cursor: pointer;
+.headerIcon {
+  color: lightgray;
+  padding-right: 10px;
+  cursor: pointer;
 }
-.Inp{
+.Inp {
   border: none;
   outline: none;
 }
-.headerButtonSearch{
+.headerButtonSearch {
   background-color: #004cb8;
   padding: 12px;
-  color:white; 
+  color: white;
   font-size: 20px;
   border: none;
-  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif;
   position: relative;
-  right:-28px;
+  right: -28px;
   cursor: pointer;
 }
-
-.date{
+.date {
   position: absolute;
   top: 50px;
-  right:400px;
+  right: 400px;
 }
-.options{
+.options {
   position: absolute;
-  top:50px;
+  top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:10px;
+  gap: 10px;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 10px 5px 20px -10px  black;
+  box-shadow: 10px 5px 20px -10px black;
   border-radius: 5px;
 }
 
-.optionsItems{
+.optionsItems {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  gap: 40px
+  gap: 40px;
 }
-.optionCouterButton{
+.optionCouterButton {
   border: none;
-  
-
 }
-.optionCouterButton:hover{
+.optionCouterButton:hover {
   background-color: lightblue;
   cursor: pointer;
 }
 
-.optionCouterButton:disabled{
+.optionCouterButton:disabled {
   cursor: not-allowed;
 }
