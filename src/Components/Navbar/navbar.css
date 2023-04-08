@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+.container {
+  background-color: #003580;
+  color: white;
+  width: 100vw;
+  display: flex;
+  height: 50px;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.text-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-left: 160px;
+  bottom: 5px;
+  font-size: 18px;
+}
+
+.button-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.btn {
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  color: #003580;
+  padding: 7px;
+  font-size: 15px;
+}
+
+.btn.circle {
+ width: 30px;
+}
+.btn.circle img {
+  width: 100%;
+  background-size: contain;
+  border-radius: 22px;
+  background-size: cover;
+}
