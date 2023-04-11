@@ -1,10 +1,11 @@
 import "./navbar.css";
+import Button from '@mui/material/Button';
 
 const Navbar = () => {
   return (
     <div className="container">
       <div className="text-container">
-        <h3>Booking.com</h3>
+        <h3>HotelWale.com</h3>
       </div>
       <div className="button-container">
         <div className="btn circle">

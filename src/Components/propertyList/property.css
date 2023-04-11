@@ -1,0 +1,28 @@
+.pList{
+     display: flex;
+     width: 100%;
+     max-width: 1024px;
+     gap: 10px;
+     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica,
+     Arial, sans-serif;
+     font-size: 10px;
+     position: relative;
+     left: 51px;
+}
+
+.pListItem{
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    flex: 1;
+}
+.pListTitles> h2{
+    color: gray;
+    font-size: 14px;
+}
+
+.pListImg{
+    width: 100%;
+    height: 194px;
+    object-fit: cover;
+}
