@@ -16,10 +16,13 @@ import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns";
 import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import { useNavigate } from "react-router-dom";
 
 const Header = ({ type }) => {
   const [openState, setopenState] = useState(false);
   const [openOptions, setOpenOptions] = useState(false);
+  const [destination, setDestination] = useState("");
+  const navigate = useNavigate();
 
   const [date, setDate] = useState([
     {
@@ -32,7 +35,7 @@ const Header = ({ type }) => {
   const [options, setOptions] = useState({
     adult: 1,
     children: 0,
-    room: 0,
+    room: 1,
   });
 
   const handelButton = (type) => {
@@ -43,6 +46,10 @@ const Header = ({ type }) => {
         [name]: tesk === "i" ? options[name] + 1 : options[name] - 1,
       };
     });
+  };
+
+  const handelSearch = () => {
+    navigate("./hotels",{state:{destination,date,options}});
   };
 
   return (
@@ -81,10 +88,14 @@ const Header = ({ type }) => {
                     type="text"
                     placeholder="Where are you going?"
                     className="Inp"
+                    onChange={(e) => setDestination(e.target.value)}
                   />
                 </div>
                 <div className="headerSearchItemBox">
-                  <FontAwesomeIcon icon={faCalendarAlt} className="headerIcon" />
+                  <FontAwesomeIcon
+                    icon={faCalendarAlt}
+                    className="headerIcon"
+                  />
                   <span
                     onClick={() => setopenState((preval) => !preval)}
                   >{`${format(date[0].startDate, "dd/MM/yyyy")} to ${format(
@@ -98,6 +109,7 @@ const Header = ({ type }) => {
                       onChange={(item) => setDate([item.selection])}
                       moveRangeOnFirstSelection={false}
                       ranges={date}
+                      minDate={new Date()}
                       className="date"
                     />
                   )}
@@ -183,7 +195,9 @@ const Header = ({ type }) => {
                   )}
                 </div>
                 <div className="headerSearchItemBox">
-                  <button className="headerButtonSearch">Search</button>
+                  <button className="headerButtonSearch" onClick={handelSearch}>
+                    Search
+                  </button>
                 </div>
               </div>
             </>

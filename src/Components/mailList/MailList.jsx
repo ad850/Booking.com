@@ -9,7 +9,7 @@ const MailList = () => {
         <h2 className="subline">Sign up and we'll send the best deals to you</h2>
         <div>
         <input type="text" placeholder="Your email" className="inpMail"/>
-        <Button variant="contained">Submit</Button>
+        <Button variant="contained" >Submit</Button>
         </div>
       </div>
     
