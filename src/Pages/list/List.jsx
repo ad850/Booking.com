@@ -5,7 +5,8 @@ import "./list.css";
 import { useState } from "react";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
+import SearchItem from "../../Components/searchItem/SearchItem";
 
 const List = () => {
   const location = useLocation();
@@ -13,8 +14,6 @@ const List = () => {
   const [destination, setDestination] = useState(location.state.destination);
   const [option, setOptions] = useState(location.state.options);
   const [openDate, setOpenDate] = useState(false);
-
-  console.log(option);
 
   return (
     <>
@@ -28,7 +27,7 @@ const List = () => {
               <label> Destination </label>
               <input type="text" placeholder={destination} />
             </div>
-            <div className="lsItem">
+            <div className="lsItem dateContain">
               <label> Check-in Date</label>
               <span onClick={() => setOpenDate((preval) => !preval)}>
                 {`${format(date[0].startDate, "dd/MM/yyyy")} to ${format(
@@ -44,7 +43,7 @@ const List = () => {
                 />
               )}
             </div>
-            <div className="lsItem">
+            <div className="lsItem  noDateContain">
               <label>Options</label>
               <div className="lsOptionItem">
                 <span className="lsOptionText">
@@ -83,10 +82,12 @@ const List = () => {
                 />
               </div>
             </div>
-          <Button variant="contained" className="lsbtn">Submit</Button>
+            <Button variant="contained" className="lsbtn">
+              Submit
+            </Button>
           </div>
           <div className="listResult">
-            <h1>right</h1>
+          <SearchItem/>
           </div>
         </div>
       </div>

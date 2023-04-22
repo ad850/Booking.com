@@ -12,7 +12,9 @@
     Arial, sans-serif;
     list-style: none;
     position: relative;
-    left: 636px;
+    width: 100%;
+    max-width: 1024px;
+    left: 300px;
 }
 
 .listElement  li{

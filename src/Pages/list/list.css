@@ -14,10 +14,11 @@
 .listSearch {
   flex: 1;
   background-color: #febb02;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
-  border: 1px solid black;
-  height: 430px;
+  position: sticky;
+  top: 100px;
+  height: max-content;
 }
 
 .lsTitle {
@@ -33,6 +34,7 @@
   margin-top: 5px;
 }
 
+
 .lsItem > input {
   height: 20px;
   border: none;
@@ -46,7 +48,6 @@
 
 .listResult {
   flex: 3;
-  background-color: aquamarine;
 }
 
 .lsItem > span {

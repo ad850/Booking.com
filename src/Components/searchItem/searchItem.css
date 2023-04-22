@@ -1,0 +1,60 @@
+.items {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  padding: 7px;
+  width: auto;
+  position: relative;
+  border-color: lightslategray;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.image {
+  position: relative;
+}
+.iwrapper {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+.ibutton:hover {
+  color: red;
+}
+
+.text {
+  font-size: 11px;
+  color: #0071c2;
+  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  flex: 3;
+}
+.text.para {
+  color: black;
+  font-size: 14px;
+  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.rating {
+  display: flex;
+  position: relative;
+  top: 17px;
+  flex: 1;
+}
+.rating-text {
+  position: relative;
+  right: 10px;
+}
+
+.rating-btn {
+  background-color: #003580;
+  border-radius: 5px;
+  color: whitesmoke;
+  padding: 4px;
+  cursor: pointer;
+}
